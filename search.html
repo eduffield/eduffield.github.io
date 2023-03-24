@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="css/main.css" rel="stylesheet">
+        <title>Google Enhanced Search</title>
+        <style>
+            h2 {
+                font-size: 20px;
+            }
+            #search {
+                width: 5em;
+                height: 3em;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="Title">
+            <h1>Google Enhanced Search Form</h1>
+        </section>
+        <section id="Form">
+            <h2>Query Form:</h2>
+            <form action="https://www.google.com/search" method="GET" target="_blank">
+                <fieldset id="toplevelset">
+                    <div>
+                        <label for="searchbox">Search String:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="text" name="q" id="searchbox" size="75" placeholder="Content to search for">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="site">Enter a Site:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="text" id="site" name="as_sitesearch" placeholder="Search only a specific website" size="75">
+                    </div>
+                    <div>
+                        <label for="ftype">Enter a Filetype:&nbsp;</label>
+                        <select name="as_filetype" id="ftype">
+                            <option value="">--All Files--</option>
+                            <option value="pdf">PDF</option>
+                            <option value="xlsx">Excel Spreadsheet</option>
+                            <option value="docx">Word Document</option>
+                            <option value="txt">Standard Text</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="dtype">Date Published:&nbsp;&nbsp;&nbsp;</label>
+                        <select name="as_qdr" id="dtype">
+                            <option value="">--Anytime--</option>
+                            <option value="d">In the past day</option>
+                            <option value="w">In the past week</option>
+                            <option value="m">In the past month</option>
+                            <option value="y">In the past year</option>
+                        </select>
+                    </div>
+                    <fieldset>
+                        <div>
+                            <input type="checkbox" name="tbm" value="isch" id="checkimg">
+                            <label for="checkimg">Image Search?</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="lang" value="en" id="checkeng">
+                            <label for="checkeng">English-only Websites?</label>
+                        </div>
+                    </fieldset>
+                </fieldset>
+                <input type="submit" value="Search!" id="search">
+            </form>
+        </section>
+        <section id="Return_Button">
+            <div>
+                <h3><br><br><br><a class="return" href="index.html">Return</a></h3>
+            </div>
+        </section>
+    </body>
+</html>
