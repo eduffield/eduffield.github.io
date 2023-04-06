@@ -12,6 +12,9 @@ body {
 .ExperienceTitle {
     text-decoration: underline;
 }
+.References {
+    text-align: center;
+}
 h1 {
     font-size: 50px;
 }
