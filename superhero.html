@@ -9,6 +9,7 @@
             body {
                 background-image: url("images/meshback.jpg");
                 font-family: 'Courier New', Courier, monospace;
+                color: black;
             }
             img {
                 width: 100px;
@@ -53,6 +54,43 @@
                 padding: 5px;
                 background-color: lightgray;
             }
+            * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .table-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 0;
+            padding: 1rem;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 1px solid #dddddd;
+            max-width: 100%;
+        }
+
+        table th,
+        table td {
+            padding: 1rem;
+            text-align: left;
+            border: 1px solid #dddddd;
+        }
+
+        table th {
+            background-color: #f2f2f2;
+        }
+
+        
         </style>
     </head>
     <body>
