@@ -16,9 +16,18 @@ i {
     color: #a32d2a;
 }
 
+strong {
+    color: #a32d2a;
+}
+
 .right {
     text-align: right;
 }
+
+.left {
+    text-align: left;
+}
+
 
 h1 {
     font-size: 50px;
